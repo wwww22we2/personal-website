@@ -198,12 +198,7 @@ ul { list-style: none; margin: 0; padding: 0; }
 }
 
 .accent-underline {
-  background: var(--primary);
-  color: #fff;
-  padding: 0 0.14em;
-  border-radius: 0.16em;
-  box-decoration-break: clone;
-  -webkit-box-decoration-break: clone;
+  color: var(--purple);
 }
 
 .hero-sub {
@@ -276,12 +271,14 @@ ul { list-style: none; margin: 0; padding: 0; }
   display: flex;
   align-items: stretch;
   justify-content: space-between;
+  gap: 14px;
 }
 
 .stat-card {
   flex: 1 1 0;
-  background: var(--primary);
-  color: #fff;
+  background: var(--surface-2);
+  border: 2px solid var(--ink);
+  color: var(--ink);
   border-radius: var(--radius-md);
   padding: 22px 26px 24px;
   display: flex;
@@ -291,7 +288,7 @@ ul { list-style: none; margin: 0; padding: 0; }
   z-index: 1;
 }
 
-.stat-label { font-size: 15px; font-weight: 500; opacity: 0.92; }
+.stat-label { font-size: 15px; font-weight: 500; color: var(--muted); }
 
 .stat-value {
   font-family: var(--font-display);
@@ -303,15 +300,7 @@ ul { list-style: none; margin: 0; padding: 0; }
 
 .stat-value small { font-size: 0.45em; font-weight: 700; margin-left: 2px; }
 
-.stat-connector {
-  flex: 0 0 34px;
-  align-self: center;
-  height: 64px;
-  margin-inline: -9px;
-  background: var(--primary);
-  border-radius: 12px;
-  z-index: 0;
-}
+.stat-connector { display: none; }
 
 /* ============ 跑马灯 ============ */
 .marquee {
