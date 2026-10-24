@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>猫鱼笨鱼工作室 · 独立小游戏</title>
+  <meta name="description" content="猫鱼笨鱼工作室官方网站 —— 7 款独立小游戏：模拟、修仙、养成、塔防。从小生意做到全球首富，从凡人修到飞升。" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2316140F'/%3E%3Cpath d='M20 40 L32 18 L44 40 Z' fill='%23fff'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ===== 导航 ===== -->
+  <header class="nav-wrap">
+    <nav class="nav" id="nav">
+      <a class="nav-logo" href="#top" aria-label="回到顶部">
+        <span class="logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" width="26" height="26">
+            <path d="M11 8 L15.5 13 L24.5 13 L29 8 L29 8 Q31 14 31 19 Q31 30 20 30 Q9 30 9 19 Q9 14 11 8 Z" fill="currentColor"/>
+            <circle cx="15" cy="20" r="2.2" fill="#fff"/>
+            <circle cx="25" cy="20" r="2.2" fill="#fff"/>
+          </svg>
+        </span>
+        <strong>猫鱼笨鱼</strong>
+      </a>
+      <span class="nav-divider" aria-hidden="true"></span>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#games">全部游戏</a></li>
+        <li><a href="#categories">游戏分类</a></li>
+        <li><a href="#about">关于我们</a></li>
+      </ul>
+      <span class="nav-divider" aria-hidden="true"></span>
+      <span class="nav-qq" title="玩家交流群">
+        <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M4 5 h16 v11 h-9 l-4 4 v-4 H4 Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+        QQ群：<b>432024840</b>
+      </span>
+      <a class="nav-cta" href="https://www.taptap.cn/developer/452854" target="_blank" rel="noopener">
+        TapTap 主页
+        <svg viewBox="0 0 16 16" width="12" height="12" aria-hidden="true"><path d="M3 13 L13 3 M6 3 h7 v7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- ===== 首屏 ===== -->
+    <section class="hero container">
+      <div class="hero-grid">
+        <div class="hero-copy reveal">
+          <h1 class="hero-title">把小生意，<br />做成<span class="accent-underline">大快乐</span></h1>
+          <p class="hero-sub">猫鱼笨鱼工作室 · 独立小游戏七连发。卖咖啡、开快递站、收二手车、守卫暗黑防线……每一个都从零开始，一路玩到起飞。</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#games">浏览全部游戏</a>
+            <a class="btn btn-ghost" href="#categories">看看有什么类型</a>
+          </div>
+        </div>
+        <div class="hero-art reveal" aria-hidden="true">
+          <div class="hero-panel">
+            <div class="hero-shot hero-shot-a"><img src="assets/980975/shot0.jpg" alt="" loading="eager" /></div>
+            <div class="hero-shot hero-shot-b"><img src="assets/961145/shot0.jpg" alt="" loading="eager" /></div>
+            <div class="hero-shot hero-shot-c"><img src="assets/924366/shot0.jpg" alt="" loading="eager" /></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 统计连体卡 -->
+      <div class="stats reveal" role="list" aria-label="工作室数据">
+        <div class="stat-card" role="listitem"><span class="stat-label">上架游戏</span><span class="stat-value">7<small> 款</small></span></div>
+        <span class="stat-connector" aria-hidden="true"></span>
+        <div class="stat-card" role="listitem"><span class="stat-label">游戏品类</span><span class="stat-value">4<small> 大</small></span></div>
+        <span class="stat-connector" aria-hidden="true"></span>
+        <div class="stat-card" role="listitem"><span class="stat-label">TapTap 最高评分</span><span class="stat-value">9.5</span></div>
+        <span class="stat-connector" aria-hidden="true"></span>
+        <div class="stat-card" role="listitem"><span class="stat-label">独立自制</span><span class="stat-value">100<small>%</small></span></div>
+      </div>
+    </section>
+
+    <!-- ===== 跑马灯 ===== -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track" id="marqueeTrack"></div>
+    </div>
+
+    <!-- ===== 最新上架 ===== -->
+    <section class="featured container" id="featured">
+      <div class="featured-copy reveal">
+        <span class="chip-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="20" height="20"><path d="M12 2 L15 9 L22 9 L16.5 13.5 L18.5 21 L12 16.5 L5.5 21 L7.5 13.5 L2 9 L9 9 Z" fill="currentColor"/></svg>
+        </span>
+        <h2 class="section-title">最新上架</h2>
+        <div class="featured-meta" id="featuredMeta"></div>
+        <p class="featured-desc" id="featuredDesc"></p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" id="featuredLink" href="#" target="_blank" rel="noopener">去 TapTap 查看
+            <svg viewBox="0 0 16 16" width="12" height="12" aria-hidden="true"><path d="M3 13 L13 3 M6 3 h7 v7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a class="btn btn-ghost" href="#games">看更多游戏</a>
+        </div>
+      </div>
+      <div class="featured-art reveal" id="featuredArt" aria-hidden="true"></div>
+    </section>
+
+    <!-- ===== 全部游戏 ===== -->
+    <section class="games container" id="games">
+      <div class="section-head reveal">
+        <h2 class="section-title">全部游戏</h2>
+        <p class="section-sub">每一款都能让你从一颗螺丝钉开始，经营出一片天地。</p>
+      </div>
+      <div class="filter-bar reveal" id="filterBar" role="tablist" aria-label="按分类筛选"></div>
+      <div class="game-grid" id="gameGrid"></div>
+      <p class="grid-empty" id="gridEmpty" hidden>这个分类暂时还没有游戏，敬请期待～</p>
+    </section>
+
+    <!-- ===== 分类 ===== -->
+    <section class="categories container" id="categories">
+      <div class="section-head reveal">
+        <h2 class="section-title">游戏分类</h2>
+        <p class="section-sub">四个品类，四种人生。点击分类可以直达对应游戏。</p>
+      </div>
+      <div class="cat-grid" id="catGrid"></div>
+    </section>
+
+    <!-- ===== 关于 ===== -->
+    <section class="about container" id="about">
+      <div class="about-card reveal">
+        <div class="about-copy">
+          <a class="about-logo" href="https://www.taptap.cn/developer/452854" target="_blank" rel="noopener">
+            <span class="logo-mark logo-mark-lg" aria-hidden="true">
+              <svg viewBox="0 0 40 40" width="30" height="30">
+                <path d="M11 8 L15.5 13 L24.5 13 L29 8 L29 8 Q31 14 31 19 Q31 30 20 30 Q9 30 9 19 Q9 14 11 8 Z" fill="currentColor"/>
+                <circle cx="15" cy="20" r="2.2" fill="#fff"/>
+                <circle cx="25" cy="20" r="2.2" fill="#fff"/>
+              </svg>
+            </span>
+            <strong>猫鱼笨鱼工作室</strong>
+          </a>
+          <h2 class="about-title">做更多<br />好玩的小游戏</h2>
+          <p class="about-sub">我们是一支爱做模拟玩法的小团队，相信"从零开始慢慢做大"是最朴素的快乐。新游戏正在路上，去 TapTap 关注我们，第一时间收到更新。</p>
+          <a class="btn btn-primary" href="https://www.taptap.cn/developer/452854" target="_blank" rel="noopener">TapTap 关注我们</a>
+        </div>
+        <div class="about-social" aria-label="社交链接">
+          <a class="social-dot" href="https://www.taptap.cn/developer/452854" target="_blank" rel="noopener" title="TapTap 开发者主页" aria-label="TapTap 开发者主页">
+            <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M5 6.5 h14 M12 6.5 V19" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/></svg>
+          </a>
+          <a class="social-dot" href="#games" title="浏览游戏" aria-label="浏览游戏">
+            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M7 8 h10 a4 4 0 0 1 4 4 v2 a3 3 0 0 1 -5.6 1.5 L14 14 h-4 l-1.4 1.5 A3 3 0 0 1 3 14 v-2 a4 4 0 0 1 4 -4 Z M7.5 11 v2 M6.5 12 h2 M15.5 11.2 v.1 M17.2 12.8 v.1" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </a>
+          <a class="social-dot" href="#about" title="关于我们" aria-label="关于我们">
+            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 11 v5 M12 8 v.1" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" fill="none"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== 页脚 ===== -->
+  <footer class="footer container">
+    <div class="footer-card reveal">
+      <ul class="footer-links">
+        <li><a href="#games">全部游戏</a></li>
+        <li><a href="#categories">游戏分类</a></li>
+        <li><a href="#featured">最新上架</a></li>
+        <li><a href="#about">关于我们</a></li>
+        <li><a href="https://www.taptap.cn/developer/452854" target="_blank" rel="noopener">TapTap 主页</a></li>
+      </ul>
+      <div class="footer-qq">
+        <img class="qq-qr" src="assets/qq-qrcode.png" alt="QQ 群二维码" width="96" height="96" loading="lazy" />
+        <div class="qq-info">
+          <span class="qq-title">加入玩家 QQ 群</span>
+          <span class="qq-number">QQ群：432024840</span>
+          <span class="qq-hint">扫码进群 · 反馈建议 · 交流攻略</span>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>猫鱼笨鱼工作室 2026 © 保留所有权利</span>
+        <span class="footer-made">用热爱做游戏 · Powered by ☕ + 🐟</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/games.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
