@@ -125,20 +125,6 @@ ul { list-style: none; margin: 0; padding: 0; }
 
 .nav-links a:hover { text-decoration-color: var(--primary); }
 
-.nav-qq {
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
-  font-size: 14.5px;
-  font-weight: 500;
-  color: var(--muted);
-  white-space: nowrap;
-}
-
-.nav-qq svg { color: var(--primary); flex: 0 0 auto; }
-
-.nav-qq b { color: var(--ink); font-weight: 800; letter-spacing: 0.01em; }
-
 .nav-cta {
   display: inline-flex;
   align-items: center;
@@ -153,6 +139,9 @@ ul { list-style: none; margin: 0; padding: 0; }
 }
 
 .nav-cta:hover { background: var(--primary-deep); transform: translateY(-1px); }
+
+.nav-cta--qq { background: var(--purple); }
+.nav-cta--qq:hover { background: #4A40CC; }
 
 /* ============ 通用按钮 ============ */
 .btn {
@@ -846,7 +835,6 @@ section { scroll-margin-top: 110px; }
   .hero-title { font-size: clamp(40px, 11vw, 56px); }
   .nav { gap: 10px; padding-left: 14px; }
   .nav-logo { font-size: 15px; }
-  .nav-qq { font-size: 12.5px; gap: 5px; }
   .nav-cta { padding: 8px 14px; font-size: 13.5px; }
   .footer-qq { gap: 16px; }
   .qq-qr { width: 82px; height: 82px; }
@@ -854,6 +842,7 @@ section { scroll-margin-top: 110px; }
 
 @media (max-width: 380px) {
   .nav-cta { display: none; }
+  .nav-cta--qq { display: inline-flex; padding: 7px 12px; font-size: 12px; }
 }
 
 /* ============ 无障碍 ============ */
