@@ -40,7 +40,7 @@
 
   /* ---------- 最新上架（取发布日期最新且未隐藏的一款） ---------- */
   function buildFeatured() {
-    const g = GAMES.find((x) => x.id === "980975") || GAMES[0];
+    const g = GAMES[0]; // 数据按上架时间从新到旧排列，"最新上架"自动取第一款
     if (!g) return;
     $("#featuredDesc").textContent = g.desc;
     $("#featuredLink").href = g.link;
