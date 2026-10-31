@@ -1,5 +1,28 @@
 window.GAMES = [
   {
+    "id": "1001258",
+    "name": "在出租屋里开公司：当首富",
+    "cats": [
+      "模拟",
+      "养成"
+    ],
+    "desc": "开始只在一个出租屋里接外包单子，逐渐开始创建自己工作室，招揽自己的团队，团队越来越大，并购公司，扩展规模，你能做到哪一步，来试试吧",
+    "rating": 10,
+    "ratingCount": 6,
+    "published": "2026-10-28",
+    "link": "https://www.taptap.cn/app/1001258",
+    "accent": "#3E7D8E",
+    "icon": "assets/1001258/icon.jpg",
+    "shots": [
+      "assets/1001258/shot0.jpg",
+      "assets/1001258/shot1.jpg",
+      "assets/1001258/shot2.jpg",
+      "assets/1001258/shot3.jpg",
+      "assets/1001258/shot4.jpg",
+      "assets/1001258/shot5.jpg"
+    ]
+  },
+  {
     "id": "980975",
     "name": "星了瑞：卖咖啡卖到全城",
     "cats": [
