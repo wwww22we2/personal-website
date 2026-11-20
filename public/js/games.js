@@ -1,5 +1,51 @@
 window.GAMES = [
   {
+    "id": "1042624",
+    "name": "系统许愿成功：每天花光一个亿",
+    "cats": [
+      "模拟",
+      "养成"
+    ],
+    "desc": "许愿成功，系统每天准时到账一亿元！买豪车、置别墅、包场音乐节、举办私人车展，或干脆把钱全部送出去——怎么花由你决定。购入的每一件资产永久收藏，10级身份与12张活动纪念卡记录你的挥金人生。今天的一亿，你打算怎么花光？",
+    "rating": 0,
+    "ratingCount": 0,
+    "published": "2026-11-20",
+    "link": "https://www.taptap.cn/app/1042624",
+    "accent": "#C08A1E",
+    "icon": "assets/1042624/icon.jpg",
+    "shots": [
+      "assets/1042624/shot0.jpg",
+      "assets/1042624/shot1.jpg",
+      "assets/1042624/shot2.jpg",
+      "assets/1042624/shot3.jpg",
+      "assets/1042624/shot4.jpg"
+    ]
+  },
+  {
+    "id": "1008654",
+    "name": "汽修：从小时工修到首富",
+    "cats": [
+      "模拟",
+      "养成"
+    ],
+    "desc": "一款轻度汽修经营养成游戏。你将从修理厂小时工起步，接待客户、检查故障、报价维修，靠一单单生意赚取第一桶金。升级维修设备、培养员工、淘车翻新、个性改装，再投资开设多家分店，逐步打造属于自己的汽修连锁帝国。从拧螺丝的小工开始，你能修到首富吗？",
+    "rating": 0,
+    "ratingCount": 0,
+    "published": "2026-11-13",
+    "link": "https://www.taptap.cn/app/1008654",
+    "accent": "#2C5F86",
+    "icon": "assets/1008654/icon.jpg",
+    "shots": [
+      "assets/1008654/shot0.jpg",
+      "assets/1008654/shot1.jpg",
+      "assets/1008654/shot2.jpg",
+      "assets/1008654/shot3.jpg",
+      "assets/1008654/shot4.jpg",
+      "assets/1008654/shot5.jpg",
+      "assets/1008654/shot6.jpg"
+    ]
+  },
+  {
     "id": "1001258",
     "name": "在出租屋里开公司：当首富",
     "cats": [
